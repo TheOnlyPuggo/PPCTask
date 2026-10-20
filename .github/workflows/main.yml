@@ -12,5 +12,5 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Update HTML
-        if: ${{ github.actor == 'TheOnlyPuggo' }}
+        # if: ${{ github.actor == 'TheOnlyPuggo' }}
         run: sed -i '/<\/body>/i <p>Updated by Team Leader on '"$(date)"'</p>' index.html
